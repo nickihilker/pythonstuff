@@ -1,0 +1,116 @@
+
+#################################################################################################################################################################################
+#Consider the following list of integers: [6,4,7,8,1,0,10,9,2,3,5].
+#Show how this list is sorted by the following algorithms:
+
+################################################################################################################################################################################
+
+        #bubble sort
+
+
+def bubblesort(ogintegerlist):
+    #starting loop to set the length of the list
+    n = len(ogintegerlist)
+    sortied = False
+    #while not whensorte:
+    for p in range(n-1, 0, -1):
+        #go to next part in the list
+        for i in range(p):
+            if ogintegerlist[i]>ogintegerlist[i+1]:
+                sortied=True
+                #makes them go inverse here
+                ogintegerlist[i], ogintegerlist[i+1] = ogintegerlist[i+1], ogintegerlist[i]
+                
+            if not sortied:
+                return
+                #ogintegerlist[j+1], ogintegerlist[j] = ogintegerlist[j], ogintegerlist[j+1]
+            #else:
+                
+    #return ogintegerlist
+#print bubblesort
+ogintegerlist = [6,4,7,8,1,0,10,9,2,3,5]
+#n = len(ogintegerlist)
+bubblesort(ogintegerlist)
+print("bubble sort is:")
+print(ogintegerlist)
+
+########################################################################################
+
+        #selection sort
+
+#find minimum value here
+
+def selectionsort(selectonlist):
+    n = len(selectonlist)
+    sortied = False
+    for i in range(n):
+        PositionOfMinNum = i
+        for x in range(i + 1, n):
+            if selectonlist[x] < selectonlist[PositionOfMinNum]:
+                PositionOfMinNum = x
+        #switch them here
+        selectonlist[i], selectonlist[PositionOfMinNum] = selectonlist[PositionOfMinNum], selectonlist[i]
+        
+    
+selectonlist = [6,4,7,8,1,0,10,9,2,3,5]
+selectionsort(selectonlist)
+print("selection sort is:")
+print(selectonlist)
+
+
+########################################################################################
+
+        #insertion sort
+        #just to wwrite down my thoughts... it seems like selection would take the most execution time? 
+
+def insertionsort(insertionlist):
+    n = len(insertionlist)
+    sortied = False
+    
+    #if the length of the list has more than one placement
+    if (i := n) <= 1:
+        return
+    #move the list numbers to one position in the front if they're less than the other &
+    #as long as they actually qualify as a num
+    for k in range(1, i): 
+        numInList = insertionlist[k]
+        num = k-1
+        while num >=0 and numInList < insertionlist[num]:
+            #switch them up g
+            insertionlist[num+1] = insertionlist[num]
+            num -= 1 #send it to next part in the list
+        insertionlist[num+1] = numInList
+
+insertionlist = [6,4,7,8,1,0,10,9,2,3,5]
+insertionsort(insertionlist)
+print("selection sort is:")
+print(insertionlist)
+print()
+################################################################################################################################################################################
+
+
+#What is the difference between a list and a dictionary?
+#How are they coded differently, and what different implementations do they have?
+#Build a script that utilizes at least one list and one dictionary.
+
+        #LISTS
+            #Lists are a collection of values, places inside [] and separated with commas.
+            #It can include string, interger, and object DataTypes. They are able to be altered.
+            #indices are intergers [0, 1, 2, 3] etc
+
+
+#Here is an example of a list:
+WhatIsAList = ["A", "List", "Has",  "Multiple", "Values"]
+
+        #DICTIOINARIES
+            #dictionaries are similar to lists, but they hold a key:value pair.
+            #keys can be any data type.
+            #There is no real guarantee for maintaining order
+            #each pair is separated with a colon, and each key is separated by a comma.
+
+WhatIsADictionary = {1:"This", 2:"Is", 3:"A", 'Name':"Dictionary"}
+
+print(WhatIsADictionary, WhatIsAList)
+
+################################################################################################################################################################################
+

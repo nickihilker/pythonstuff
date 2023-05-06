@@ -1,0 +1,71 @@
+#sudoku
+#fill in empty boxes with an interger between 1 and 9
+#every number has to appear once in every row, every column, and every one of tthe small by boxes
+#3 by thrree boxes separated with thick boarders.
+
+
+#assign size of matrix
+#utility function to print grid
+# assign num to row and column
+#set "False" if numbers in column AND row are repeated
+#check 8th row and 9th column to save it all
+#ese if position on grid has value greater than 0. if so, iterrate for next column
+#if it's gucci, we move to nect columb, assign number in the current row, column(.
+#check for next posibility of next col
+
+
+#assign matrix - aka, a two dimensional array where each element is the swame size
+matrix = 9
+
+#define a puzzle
+def puzzle(a):
+    for i in range(matrix):
+        for j in range(matrix):
+            print(a[i][j], end = " ")
+        print()
+
+#solve the puzzle
+def solveit(grid, row, column, number):
+    #if numbers in row are duplicated
+    for x in range(9):
+        if grid[row][x] == number:
+            return False
+    #if numbers in columns are repliciated
+    for x in range(9):
+        if grid[x][column]==number:
+            return False
+
+    return True
+
+#there's the game
+def Sudoku(grid,row,column):
+    #check 8th row and 9th column, return true so that we know to move forward
+    if (row == 8) and (column == 9):
+        return True
+    if column == 9:
+        #if there are 9 columns here, check the last row
+        row += 1
+        column = 0
+        
+    #note for self: [i][j] shows a two sided grid
+    if grid[row][column] > 0:
+        #move to the next column!
+        return Sudoku(grid, row, column + 1)
+      
+    for number in range(1, 10):
+        #call solve
+        if solveit(grid,row,column,number):
+            grid[row][column] = number
+            if Sudoku(grid, row, column + 1):
+                return True
+        grid[row][column] = 0
+    return False
+
+print("here is a completed solution to a sudoku game")
+
+grid = [[5,3,0,0,7,0,0,0,0],[6,0,0,1,9,5,0,0,0],[0,9,8,0,0,0,0,6,0],[8,0,0,0,6,0,0,0,3],[4,0,0,8,0,3,0,0,1],[7,0,0,0,2,0,0,0,6],[0,6,0,0,0,0,2,8,0],[0,0,0,0,1,9,0,0,5],[0,0,0,0,0,0,0,0,0]]
+
+Sudoku(grid,0,0)
+puzzle(grid)
+    
+

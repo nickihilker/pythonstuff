@@ -1,0 +1,549 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.smallbuttn{
+    display:block;
+    position: relative;
+    float:left;
+    margin: 0 0 0 auto;
+    margin-left:auto;
+    margin-right:auto;
+    width:230px;
+    align-content:center;
+
+  }
+
+
+header
+{
+  background-position: center;
+}
+ 
+body
+{
+  /*;
+  */
+  background-color: white;
+  max-width: auto;
+  max-height: 100%;
+  background-position: center;
+  font-family: "Lato", sans-serif;
+  align-content:space-around;
+  padding-right:60px;
+}
+
+.homebackground{
+  display: block;
+  background-size:contain;
+  margin-left:auto;
+  margin-right:auto;
+  opacity: .4;
+  max-width: 100%;
+  max-height: auto;
+
+  position: fixed;
+
+  align-content: space-around;
+}
+
+.topheaderhi{
+  background-color:white;
+  color:black;
+  margin-top: 50px;
+  padding-left: 30px;
+  padding-right:30px;
+  border-radius: 3px;
+  margin-bottom: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.homehead{
+  display: block;
+  box-sizing:content-box;
+  background-color:white;
+  width: 400px;
+  color:black;
+  margin-top: 50px;
+  padding: 0;
+  margin:0;
+  border-radius: 3px;
+  position: absolute;
+  top: 500px;
+  left: 450px;
+  transform: translate(-50%,-50%);
+  white-space: normal;
+  word-wrap: break-word;
+
+}
+
+.timerbox
+{
+  display: block;
+  margin: auto;
+  width: 50%;
+  border: 3px solid green;
+  padding: 10px;
+  background-color: white;
+  position: relative;
+  
+}
+
+.yougotthis {
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+}
+
+.thetimer {
+  font-size:30px;
+  position: absolute;
+  margin-top: -10px;
+  vertical-align: middle;
+  top: 50%;
+  transform: translate (0, -50%);
+}
+
+
+.main-nav
+{
+  align-items: center;
+  list-style:none;
+  margin-top: 2px;
+  background-color:white;
+  padding: 6px;
+}
+
+.main-nav li
+{
+ display: inline-block;
+
+}
+
+.main-nav li a
+{
+  color: black;
+  text-decoration: none;
+  padding: 5px 20px;
+  font-family:"monospace", sans-seif;
+  font-size: 25px;
+}
+
+.main-nav li
+{
+  border: 1px solid black; 
+}
+
+.row
+{
+  max-width: 1400px;
+  margin: auto;
+}
+
+.hero
+{
+  position: left;
+  width: 100%;
+  margin-left: 0px;
+  margin-top: 0px;
+  margin-right: 100px;
+}
+
+h1
+{
+  color: black;
+  text-transform: uppercase;
+  font-size: 70px;
+  text-align: center;
+  margin-top: 5px;
+  margin-left:70px;
+  column-span: all;
+}
+h3
+{
+  color: plum;
+  font-size: 50px;
+  text-align: center;
+  margin-top: 5px;
+  margin-left:70px;
+  column-span: all;
+}
+
+
+.page3
+{
+  position:inherit;
+  color:black;
+  font-size: 21px;
+  background-color:white;
+  border-style:double;
+  border-width:10px;
+  border-color:black;
+  margin-left:110px;
+  margin-right:40px;
+  column-count: 4;
+  column-gap: 50px;
+  column-rule-style: solid;
+  column-width: 100px;
+}
+
+.page4
+{
+  position:inherit;
+  color:black;
+  font-size: 21px;
+  background-color:white;
+  border-style:double;
+  border-width:10px;
+  border-color:black;
+  margin-left:110px;
+  margin-right:40px;
+  column-rule-width: 1px;
+}
+
+.page5
+{
+  position:inherit;
+  color:black;
+  font-size: 14px;
+  background-color:floralwhite;
+  border-style:double;
+  border-width:10px;
+  border-color:black;
+  margin-left:110px;
+  margin-right:40px;
+  padding-right:20px
+}
+
+.page6
+{
+  position:inherit;
+  color:black;
+  font-size: 20px;
+  background-color:whitesmoke;
+  border-style:double;
+  border-width:10px;
+  border-color:black;
+  margin-left:110px;
+  margin-right:40px;
+  padding: 20px
+}
+
+.page7
+{
+  position:inherit;
+  color:black;
+  font-size: 14px;
+  background-color:seashell;
+  border-style:double;
+  border-width:10px;
+  border-color:black;
+  margin-left:110px;
+  margin-right:40px;
+  padding:40px;
+  
+}
+.rules
+{
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+  max-width:100%;
+  height:200px;
+}
+
+.books
+{
+  display:block;
+  margin-left:50px;
+  margin-right:200px;
+  margin-top: 10px;
+  height:770px;
+  opacity: 100%;
+}
+
+.pic
+{
+  display:inline-flex;
+  align-items:center;
+  
+}
+
+.aboutme
+{
+  float:right;
+  color: black;
+  text-transform:full-width;
+  font-size: 20px;
+  text-align:left;
+  margin-top: 5px;
+  margin-left:50px;
+  align-items:center;
+  width:600px;
+  min-width:200px;
+  max-height:700px;
+}
+
+button {
+  
+  background-color: black; 
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  font-family: "Lato", sans-serif;
+  margin: 8px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  width:50%;
+  position: relative;
+  vertical-align: middle;
+  top: 70%;
+  left: 70%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+
+* {
+  box-sizing:border-box;
+}
+
+
+.column {
+  float:left;
+  width: 50%;
+  padding: 0px;
+  max-height:900px;
+  font-size: 15px;
+  border-style:double;
+  border-width:10px;
+  border-color:black;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+
+
+
+
+
+/*-------.homebackground img{
+  position: relative;
+  max-width: 100vh;
+  margin: 0 auto;
+
+}---------------*/
+
+.headerbox{
+    
+  position:relative;
+  width: 100%;
+  height: 200px;
+  margin-top: 0px;
+  margin-right: 100px;
+  border: 5px solid white;
+  z-index: -1;
+}
+
+.webform{
+  float: relative;
+
+}
+.flexc{
+  display: flex;
+}
+.adsbox{
+  flex: 1;
+  position:relative;
+  height: 100vh;
+  border: 5px solid white;
+
+}
+
+.navbox{
+  position:right;
+  flex: 3;
+  position:relative;
+  height: 70vh;
+  border: 5px solid white;
+
+
+}
+
+.aboutbox{
+  position:relative;
+  width: 80%;
+  height: 30%;
+  margin-left: 30px;
+  margin-top: 20px;
+  margin-right: 50px;
+  border: 5px solid white;
+}
+
+footer{
+  position:absolute;
+  top: 97vh;
+  margin-top: 0px;
+  margin-right: 100px;
+}
+
+
+/*/////////////////////////////////////////////////////////*/
+
+.calendar-container {
+  background: #fff;
+  width: 450px;
+  border-radius: 10px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+  position:absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.calendar-container header {
+  display: flex;
+  align-items: center;
+  padding: 25px 30px 10px;
+  justify-content: space-between;
+}
+
+.addtocal{
+  position:aboslute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+header .calendar-navigation {
+  display: flex;
+}
+
+header .calendar-navigation span {
+  height: 38px;
+  width: 38px;
+  margin: 0 1px;
+  cursor: pointer;
+  text-align: center;
+  line-height: 38px;
+  border-radius: 50%;
+  user-select: none;
+  color: #aeabab;
+  font-size: 1.9rem;
+}
+
+.calendar-navigation span:last-child {
+  margin-right: -10px;
+}
+
+header .calendar-navigation span:hover {
+  background: #f2f2f2;
+}
+
+header .calendar-current-date {
+  font-weight: 500;
+  font-size: 1.45rem;
+}
+
+.calendar-body {
+  padding: 20px;
+}
+
+.calendar-body ul {
+  list-style: none;
+  flex-wrap: wrap;
+  display: flex;
+  text-align: center;
+}
+
+.calendar-body .calendar-dates {
+  margin-bottom: 20px;
+}
+
+.calendar-body li {
+  width: calc(100% / 7);
+  font-size: 1.07rem;
+  color: #414141;
+}
+
+.calendar-body .calendar-weekdays li {
+  cursor: default;
+  font-weight: 500;
+}
+
+.calendar-body .calendar-dates li {
+  margin-top: 30px;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.calendar-dates li.inactive {
+  color: #aaa;
+}
+
+.calendar-dates li.active {
+  color: #fff;
+}
+
+.calendar-dates li::before {
+  position: absolute;
+  content: "";
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.calendar-dates li.active::before {
+  background: #6332c5;
+}
+
+.calendar-dates li:not(.active):hover::before {
+  background: #e4e1e1;
+}
+
+
+/*/////////////////////*/
+
+
+.slider{
+	margin:50px auto;
+	width:50%;
+}
+ 
+.img-box img{
+	width:100%;
+}
+
+.btn{
+	border:none;
+	outline:none;
+	background:#888;
+	padding:10px 30px;
+	font-size: 20px;
+	color:#ddd;
+	cursor: pointer;
+	margin:10px auto;			 
+}
+
+.btn:hover{
+	background: #111;
+}
+

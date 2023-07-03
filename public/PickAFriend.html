@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pick a Friend</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <nav>
+        <header>
+            <h1>StudyBudyz</h1>
+            <div class="row">
+            <ul class="main-nav">
+            <div class="main-nav"></div>
+            <nav>
+                <ul>
+                    <li><a href="NewHome.html">Home</a></li>
+                    <li><a href="GOALS.html">Goals</a></li>
+                    <li><a href="TIMER.html">Study</a></li>
+                    <li><a href="PickAFriend.html">Friends</a></li>                </ul>
+             </ul>
+            </div> 
+
+            <style>
+                #imagel{
+                    display:none;
+                    margin:50px auto;
+	                width:50%;
+                    float:center;
+                    max-width:100%
+                }
+                #imager{
+                    display:none;
+                    margin:50px auto;
+	                width:50%;
+                    float:center;
+                    max-height:100%
+                }
+                #imageg{
+                    display:none;
+                    margin:50px auto;
+	                width:50%;
+                    float:center;
+                    max-height:100%
+                }
+               
+                #button{
+                    align-items: center;
+                }
+            </style>
+            </header>
+    </nav>
+    <h3>Pick a Friend to Study With</h3>
+
+        <br><br>
+        <div class = "smallbuttn">
+            <button type="button" onclick="showl()" id="btnID"> Llama </button>
+            <button type="button" onclick="showr()" id="btnID"> Racoon </button>
+            <button type="button" onclick="showg()" id="btnID"> Goat </button>
+        </div>
+        
+        <!-- Add id to image -->
+        <div>
+            <img id="imagel" src="StudyLlama.jpg" alt="GFG image" />
+            <img id="imageg" src="StudyGoat.PNG" alt="GFG image" />
+            <img id="imager" src="StudyRacoon.PNG" alt="GFG image" />
+        </div>
+        <br><br>
+        
+    <script> 
+        function showr() {
+            document.getElementById('imager')
+                .style.display = "block";
+            document.getElementById('imageg')
+                .style.display = "none";
+            document.getElementById('imagel')
+                .style.display = "none";
+        }
+        function showl() {
+            document.getElementById('imagel')
+                .style.display = "block";
+                document.getElementById('imageg')
+                .style.display = "none";
+            document.getElementById('imager')
+                .style.display = "none";
+        }
+        function showg() {
+            document.getElementById('imageg')
+                .style.display = "block";
+            document.getElementById('imagel')
+                .style.display = "none";
+            document.getElementById('imager')
+                .style.display = "none";
+        }
+        function refreshpage(){
+            document.getElementById('imagel')
+                .style.display = "none";
+            document.getElementById('imageg')
+                .style.display = "none";
+            document.getElementById('imager')
+                .style.display = "none";
+            document.getElementById('btnID')
+                window.location.reload();
+        }
+
+    </script>
+    
+
+
+
+</body>
+</html>
